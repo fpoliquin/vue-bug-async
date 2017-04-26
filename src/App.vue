@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <router-link to="/async">Load async component</router-link>
     <router-view></router-view>
   </div>
 </template>
