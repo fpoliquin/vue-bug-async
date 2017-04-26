@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <router-link to="/sync">Load sync component</router-link>
     <router-link to="/async">Load async component</router-link>
     <router-view></router-view>
   </div>

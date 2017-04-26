@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Hello from '@/components/Hello'
-//import Async from '@/components/Async'
+import Sync from '@/components/Sync'
 
 const Async = resolve => require(['@/components/Async'], resolve)
 
@@ -15,8 +15,12 @@ export default new Router({
       component: Hello
     },
     {
+      path: '/sync',
+      component: Sync
+    },
+    {
       path: '/async',
       component: Async
-  }
+    }
   ]
 })
